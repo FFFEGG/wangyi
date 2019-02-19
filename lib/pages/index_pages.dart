@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wangyi/pages/index_gxtj.dart';
 
 class indexpage extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _indexpageState extends State<indexpage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          elevation: 1.0,
+          elevation: 0.0,
           leading: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Image.asset(
@@ -94,9 +95,7 @@ class _indexpageState extends State<indexpage> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Container(
-              child: Text('个性推荐'),
-            ),
+            index_gxtj(),
             Container(
               child: Text('主播电台'),
             ),
