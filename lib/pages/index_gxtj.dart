@@ -37,31 +37,63 @@ class _index_gxtjState extends State<index_gxtj> {
                 width: MediaQuery.of(context).size.width - 20.0,
                 child: CarouselSlider(items: [
                   InkWell(
-                    child: new Container(
-                      width: MediaQuery.of(context).size.width,
-                      margin: new EdgeInsets.symmetric(horizontal: 5.0),
-                      decoration: new BoxDecoration(
-                        borderRadius: BorderRadius.circular(3.0),
-                        image: DecorationImage(
-                          image: NetworkImage(
-                              'http://p1.music.126.net/wa7Oxq5yysZgGBvOlivwEg==/109951163871318124.jpg'),
-                          fit: BoxFit.cover,
+                    child: Stack(
+                      children: <Widget>[
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          margin: new EdgeInsets.symmetric(horizontal: 5.0),
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(3.0),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'http://p1.music.126.net/wa7Oxq5yysZgGBvOlivwEg==/109951163871318124.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
-                      ),
+                        Positioned(
+                          right: 5.0,
+                          bottom: 0.0,
+                          child: Container(
+                            padding: EdgeInsets.all(5.0),
+                            color: Colors.red,
+                            child: Text(
+                              '新碟首发',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   InkWell(
-                    child: new Container(
-                      width: MediaQuery.of(context).size.width,
-                      margin: new EdgeInsets.symmetric(horizontal: 5.0),
-                      decoration: new BoxDecoration(
-                        borderRadius: BorderRadius.circular(3.0),
-                        image: DecorationImage(
-                          image: NetworkImage(
-                              'http://p1.music.126.net/kEGOOxh_p6H7UHKuOOFkFg==/109951163871789068.jpg'),
-                          fit: BoxFit.cover,
+                    child: Stack(
+                      children: <Widget>[
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          margin: new EdgeInsets.symmetric(horizontal: 5.0),
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(3.0),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'http://p1.music.126.net/kEGOOxh_p6H7UHKuOOFkFg==/109951163871789068.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
-                      ),
+                        Positioned(
+                          right: 5.0,
+                          bottom: 0.0,
+                          child: Container(
+                            padding: EdgeInsets.all(5.0),
+                            color: Colors.green,
+                            child: Text(
+                              '独家专访',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   InkWell(
