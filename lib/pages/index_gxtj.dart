@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:wangyi/pages/index/tj_music.dart';
 
 class index_gxtj extends StatefulWidget {
   @override
@@ -24,6 +25,7 @@ class _index_gxtjState extends State<index_gxtj> {
           look_live(),
           //最新音乐
           new_music(),
+
         ],
       ),
     );
@@ -363,349 +365,6 @@ class _navState extends State<nav> {
   }
 }
 
-class tj_music extends StatefulWidget {
-  @override
-  _tj_musicState createState() => _tj_musicState();
-}
-
-class _tj_musicState extends State<tj_music> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: <Widget>[
-                Text(
-                  '推荐歌单',
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  ' >',
-                ),
-              ],
-            )),
-        GridView.count(
-          physics: new NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          crossAxisCount: 3,
-          crossAxisSpacing: 10.0,
-          mainAxisSpacing: 10.0,
-          childAspectRatio: 5 / 7,
-          padding: EdgeInsets.fromLTRB(10.0, 0, 10.0, 10.0),
-          children: <Widget>[
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p2.music.126.net/N_zpp5UmeWEtqNJDKCLTLA==/109951163862128684.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  '我知道你很累，但你一定要加油鸭！',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p1.music.126.net/NZh_fmYt3fjqUVnjaypV_Q==/109951163674428739.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  '古风盘点 | 一人一首原唱曲（男声篇）',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p1.music.126.net/8jFpVjFPbT6xUQhbkFNCRQ==/19007257509959282.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  '细数那些值得单曲循环的英文歌',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p1.music.126.net/XndPySLIcwqAoq1s5vIiYw==/109951163870324250.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  '电台节目————备胎之王',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p2.music.126.net/yAJP9BYMvOqmyYe7FkkVCw==/18746673255781638.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  'Helens小酒馆精选！年轻人的线下社交平台！',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                AspectRatio(
-                  aspectRatio: 1 / 1,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                'http://p2.music.126.net/8DhrkNymv5bFIG3Q7Jw6MA==/109951163823633535.jpg?param=140y140'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                          top: 2.0,
-                          right: 2.0,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.headset,
-                                size: 10.0,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 3.0,
-                              ),
-                              Text(
-                                '200万',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          ))
-                    ],
-                  ),
-                ),
-                Text(
-                  '硬核摇滚工业重金属（狂暴）',
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
 
 class look_live extends StatefulWidget {
   @override
@@ -1004,6 +663,89 @@ class new_music extends StatefulWidget {
 class _new_musicState extends State<new_music> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  '最新音乐',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  ' >',
+                ),
+              ],
+            )),
+        GridView.count(
+          physics: new NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          crossAxisCount: 3,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+          childAspectRatio: 5 / 7,
+          padding: EdgeInsets.fromLTRB(10.0, 0, 10.0, 10.0),
+          children: <Widget>[
+            Column(
+              children: <Widget>[
+                AspectRatio(
+                  aspectRatio: 1 / 1,
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4.0),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                'http://p2.music.126.net/K2Do99qxseaLtnDh2z7HUg==/109951163888738353.webp?imageView&thumbnail=369x0&quality=75&tostatic=0&type=webp'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: double.infinity,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        '推荐合口味的新歌',
+                        maxLines: 1,
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontSize: 13.0,
+                        ),
+                      ),
+                      Text(
+                        '五一',
+                        maxLines: 1,
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          color: Colors.black38
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+
+          ],
+        ),
+      ],
+    );
   }
 }
+
+
+
+
