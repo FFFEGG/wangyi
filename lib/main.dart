@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wangyi/home.dart';
 import 'package:wangyi/pages/index_pages.dart';
 
 void main() => runApp(MyApp());
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: indexpage(),
+      home: Scaffold(
+        body: home(),
+      ),
     );
   }
 }
