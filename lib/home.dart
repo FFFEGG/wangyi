@@ -15,31 +15,36 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   final List<BottomNavigationBarItem> bottomnavs = [
     BottomNavigationBarItem(
-      icon: Icon(CupertinoIcons.music_note),
+      icon: Image.asset('images/nav1.png',width: 25.0,),
+      activeIcon: Image.asset('images/nav1_1.png',width: 25.0,),
       title: Text(
         '发现',
       ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.video_label),
+      icon: Image.asset('images/nav2.png',width: 25.0,),
+      activeIcon: Image.asset('images/nav2_2.png',width: 25.0,),
       title: Text(
         '视频',
       ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.headset_mic),
+      icon: Image.asset('images/nav3.png',width: 25.0,),
+      activeIcon: Image.asset('images/nav3_3.png',width: 25.0,),
       title: Text(
         '我的',
       ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.people_outline),
+      icon: Image.asset('images/nav4.png',width: 25.0,),
+      activeIcon: Image.asset('images/nav4_4.png',width: 25.0,),
       title: Text(
         '朋友',
       ),
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.perm_identity),
+      icon: Image.asset('images/nav5.png',width: 25.0,),
+      activeIcon: Image.asset('images/nav5_5.png',width: 25.0,),
       title: Text(
         '账号',
       ),

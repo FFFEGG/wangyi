@@ -21,7 +21,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   carousel_pro: ^0.0.13
   carousel_slider: ^1.0.1
-
+  dio: ^2.0.9
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -47,6 +47,17 @@ flutter:
     - images/phb.png
     - images/look.png
     - images/live.gif
+    - images/nav1.png
+    - images/nav1_1.png
+    - images/nav2.png
+    - images/nav2_2.png
+    - images/nav3.png
+    - images/nav3_3.png
+    - images/nav4.png
+    - images/nav4_4.png
+    - images/nav5.png
+    - images/nav5_5.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
